@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+body {
+  background-color: antiquewhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #bc9667;
+  --second-color: #cbab60;
+  --text-color: #1b1b1b;
+  --bg-color: #fff;
+
+  /* box shadow */
+  --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
+}
+
+/* nav {
+  font-family: "Ubantu", sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+nav ul li {
+  padding: 0 12px;
+} */
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 93%;
+  padding: 0px 60px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background-color: #20262e;
+}
+header a img {
+  width: 58px;
+  padding: 0 8px;
+}
+header.sticky {
+  background: #fff;
+  padding: 0px 80px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header .logo {
+  color: antiquewhite;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+header.sticky .logo {
+  color: rgb(13, 92, 123);
+}
+header .logo span {
+  font-size: 40px;
+  color: #ff0157;
+}
+header .navigation {
+  position: relative;
+  display: flex;
+}
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-weight: bolder;
+}
+/* header.sticky .navigation li a 
+{
+    color: #ff0157;
+}
+header .navigation li a:hover
+{
+    color: #ff0157;
+} */
+
+/* .brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+} */
+
+section {
+  padding: 100px;
+}
+
+.playlist {
+  /* background-color: #20262E; */
+  color: #20262e;
+}
+.playlist span {
+  font-size: 1.9em;
+  color: #ff0157;
+}
+
+.artist {
+  background: url(img/artist\ background.avif);
+}
+.artist span {
+  font-size: 1.9em;
+  color: #ff0157;
+}
+
+.customers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.customers-container .box {
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.stars .bx {
+  color: var(--main-color);
+}
+.customers-container .box p {
+  font-size: 0.938rem;
+}
+.customers-container .box h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.5rem;
+}
+.customers-container .box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.customers-container .box:hover {
+  background: var(--second-color);
+  transition: 0.2s all linear;
+}
+.contact {
+  background: url(img/contact\ background.avif);
+  background-size: cover;
+}
+.contactForm {
+  padding: 75px 50px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 50px;
+}
+.contact h2 {
+  color: antiquewhite;
+}
+.contact h2 span {
+  color: #ff0157;
+  font-size: 1.9em;
+}
+.contactForm h3 {
+  color: #111;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  border: 1px solid#555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+.contactForm .inputBox input[type="submit"] {
+  font-size: 20px;
+  color: #fff;
+  background: #ff0157;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.copyrightText {
+  padding: 8px 40px;
+  border-top: 1px solid rgba (0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+}
+.copyrightText p {
+  color: #ff0157;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+  header .navigation {
+    display: none;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(img/menu.jpg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+}
+
+.container {
+  min-height: 72vh;
+  background-color: black;
+  color: white;
+  font-family: "Ubantu", sans-serif;
+  display: flex;
+  margin: 100px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("img/img2.jpg");
+}
+
+.container2 {
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.music-player2 {
+  background: #ffe0e5;
+  width: 400px;
+  padding: 25px 35px;
+  text-align: center;
+}
+nav2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+nav2 .circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #ffff;
+  color: #f53192;
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+.song-img2 {
+  width: 220px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+.music-player2 h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 20px;
+}
+.music-player p {
+  font-size: 14px;
+  color: #333;
+}
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #f53192;
+  cursor: pointer;
+  margin: 40px 0;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #f53192;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid#fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+.controls2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls2 div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #f53192;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+.controls2 div:nth-child(2) {
+  transform: scale(1.5);
+  background: #f53192;
+  color: #fff;
+}
+
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 14px;
+}
+.icons i {
+  cursor: pointer;
+}
+
+#myProgressBar {
+  width: 80vw;
+  text-align: center;
+  cursor: pointer;
+}
+.songItemContainer {
+  margin-top: 74px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songItem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.timeStamp {
+  margin: 0 23px;
+}
+
+.timeStamp i {
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.feedback {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.feedback h2 {
+  font-size: 2.4rem;
+  font-family: "Lexend Deca Light", serif;
+  text-align: center;
+}
+.feedback p,
+a {
+  font-size: 1.7rem;
+}
+.feedback-section {
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  padding: 3.2rem;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  margin: 4.8rem 0 3.2rem 0;
+}
+/* .child p:first-child{} */
+/* .unhappy p, .happy p, .satisfied p{} */
+:is(.unhappy, .happy, .satisfied) h3 {
+  text-align: center;
+}
+:is(.unhappy, .happy, .satisfied) p:first-child {
+  background-color: #fff1c9;
+  border-radius: 1rem;
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s linear;
+}
+:is(.unhappy, .happy, .satisfied) p:first-child:hover {
+  scale: 1.05;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+}
+.feedback-btn {
+  width: 100%;
+  text-align: center;
+}
+.button,
+a {
+  padding: 1.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #20262e;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  /* display: inline-block; */
+  font-family: "Lexend Deca Light", serif;
+}

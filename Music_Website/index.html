@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrinda-Music</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="img/logo4.png" alt="Spotify" /> <span>V</span>rinda Music <span>.</span></a
+      >
+      <div class></div>
+      <ul class="navigation">
+        <li><a href="#container">Home</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+        <li><a href="#artist">Artist</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#Login">Login</a></li> -->
+      </ul>
+    </header>
+
+
+    <div class="container" id="container">
+      <div class="songList">
+        <h1>Best of Radha-Krishna (songs)</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="0" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="1" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="2" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="3" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="4" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="5" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="6" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+          <div class="songItem">
+            <img alt="1" />
+            <span class="songName">Ye Toh Bta Do Barsane Vali</span>
+            <span class="sonlistplay"
+              ><span class="timeStamp"
+                >01:34
+                <i id="7" class="far songItemPlay fa-circle-play"></i> </span
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="myProgressBar"
+        min="0"
+        value="0"
+        max="100"
+      />
+      <div class="icons">
+        <!-- fontawesome icons -->
+        <i class="fa-solid fa-3x fa-backward" id="previous"></i>
+        <i class="far fa-3x fa-circle-play" id="masterPlay"></i>
+        <i class="fa-solid fa-3x fa-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="img/playing.webp" width="42px" alt="" id="gif" />
+        <span id="masterSongName">Ye Toh Bta Do Barsane Vali</span>
+      </div>
+    </div>    
+     <section class="playlist" id="playlist">
+      <div class="row">
+        <div class="col50">
+          <h2 class="titleText"><span>P</span>laylists</h2>
+          <br/><br/>
+          <div class="container2">
+            <div class="music-player2">
+                <nav2>
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav2>
+                <img src="img/music profile.jpg" class="song-img2">
+                <h1>Despacito</h1>
+                <p>Song by Luis Fonsi</p>
+      
+                <audio id="song">
+                    <source src="songs/Despacito(PagalWorld).mp3" type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" id="progress">
+
+                <div class="controls2">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+        </div>
+          <!-- <p>
+            This is a Music Website. <br />
+            Owned By: <br />
+            ▶ Rohit Singh Jadoun <br />
+            ▶ Satyam Mishra <br />
+            ▶ Ayush Kumar <br />
+            ▶ Shubham Sharma <br />
+            ▶ Ritika Jaiswal <br />
+            On this website you will get different type of Artist Songs. <br />
+            If you want any other type of Song <br />
+            <u>Contact</u> to us: ( Contact details are availabe in description
+            )
+          </p> -->
+        </div>
+      </div>
+    </section> 
+
+        <!-- Customers   -->
+        <section class="artist" id="artist">
+          <div class="heading">
+            <h2><span>O</span>ur Artist's</h2>
+          </div>
+          <!--Container-->
+          <div class="customers-container">
+            <div class="box">
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis optio illum cumque itaque molestiae repellendus?</p>
+              <h2>Rohit Singh Jadoun</h2>
+              <img src="img/rev1.jpeg" alt="">
+            </div>
+            
+            <div class="box">
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis optio illum cumque itaque molestiae repellendus?</p>
+              <h2>Satyam Mishra</h2>
+              <img src="img/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis optio illum cumque itaque molestiae repellendus?</p>
+              <h2>Ritika Jaiswal</h2>
+              <img src="img/rev3.jpg" alt="">
+            </div>
+            <div class="box">
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis optio illum cumque itaque molestiae repellendus?</p>
+              <h2>Shubham Sharma</h2>
+              <img src="img/rev2.jpg" alt="">
+            </div>
+            <div class="box">
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+              </div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis optio illum cumque itaque molestiae repellendus?</p>
+              <h2>Ayush Kumar</h2>
+              <img src="img/rev2.jpg" alt="">
+            </div>
+          </div>
+        </section>
+
+    <div class="feedback">
+      <section class="feedback-section">
+        <h2>
+          How satisfied are you <br />
+          with our services
+        </h2>
+        <div class="rating">
+          <div class="child unhappy">
+            <p>🥺</p>
+            <h3>Unhappy</h3>
+          </div>
+          <div class="child happy">
+            <p>😊</p>
+            <h3>Happy</h3>
+          </div>
+          <div class="satisfied">
+            <p>😁</p>
+            <h3>Satisfied</h3>
+          </div>
+        </div>
+
+        <div class="feedback-btn">
+          <button id="btn" type="button">Send Review</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="title">
+        <h2 class="titleText"><span>C</span>ontact Us</h2>
+      </div>
+      <div class="contactForm">
+        <h3>Send Message</h3>
+        <div class="inputBox">
+          <input type="text" placeholder="Name" />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="inputBox">
+          <textarea placeholder="Feedback"></textarea>
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Send" />
+        </div>
+      </div>
+    </section>
+
+    <div class="copyrightText">
+      <p>
+        Copyright 2023<u style="color: black">Vrinda Music.</u>All Right
+        Reserved
+      </p>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2b45e8b238.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
